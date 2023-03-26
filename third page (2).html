@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> MENU </title>
+</head>
+<body style="background-image: url(https://media.istockphoto.com/id/1338319555/vector/smooth-blend-rainbow-glow-abstract-background.jpg?s=612x612&w=0&k=20&c=LPA20OPGWr99oB3pNT7RABEodDZa24Yd3J8aIaVUq4o=);background-size: cover;">
+       <br/>
+       <h1 style="background-size: cover;text-align: center;font-size: 50px;font-family:Brush Script MT;">Fresh Foods :)</h1>
+       <p style="text-align: center;"><em>Where we deliver your happiness</em></p>
+       <h2 style="text-align: center;border:orange;border-width:5px;border-style:dotted;">ANYWHERE ANYTIME</h2>
+  <br/>
+<center>
+ Menu category:
+ <select id="Menu" onchange="changeMenu()">
+  <option value="Select Menu">Select Menu</option>
+   <option value="Breakfast Items">Breakfast Items</option>
+<option value="Biryanis">Biryanis</option>
+<option value="Starters">Starters</option>
+<option value="Rotis">Rotis</option>
+<option value="Curries">Curries</option>
+<option value="Juices&milkshakes">Juices</option>
+
+</select>
+Menu:
+<select id="Dish">
+<option value="">Select your dish</option>
+</select>
+<script>
+function changeMenu() {
+var Menu = document.getElementById("Menu").value;
+var Dish = document.getElementById("Dish");
+Dish.innerHTML = ""; // Clear the options in the color dropdown
+if (Menu === "Breakfast Items") {
+  Dish.innerHTML += "<option value='idly'>IDLY</option>";
+   Dish.innerHTML += "<option value='dosa'>DOSA</option>";
+    Dish.innerHTML += "<option value='upma'>UPMA</option>";
+     Dish.innerHTML += "<option value='poori'>POORI</option>";
+      Dish.innerHTML += "<option value='pesarattu'>PESARATTU</option>";
+       Dish.innerHTML += "<option value='bread omlette'>BREAD OMLETTE</option>";
+} else if (Menu === "Biryanis") {
+  Dish.innerHTML += "<option value='veg biryani'>Veg Biryani</option>";
+  Dish.innerHTML += "<option value='chicken biryani'>Chicken Biryani</option>";
+  Dish.innerHTML += "<option value='Paneer biryani'>Paneer Biryani</option>";
+  Dish.innerHTML += "<option value='veg fried rice'>Veg Fried Rice</option>";
+  Dish.innerHTML += "<option value='chicken fried rice'>Chicken Fried Rice</option>";
+} else if (Menu === "Starters") {
+  Dish.innerHTML += "<option value='veg manchurian'>Veg Manchurian</option>";
+  Dish.innerHTML += "<option value='chicken manchurian'>Chicken Manchurian</option>";
+  Dish.innerHTML += "<option value='veg 65'>Veg 65</option>";
+  Dish.innerHTML += "<option value='Chicken lollipop'>Chicken lollipop</option>";
+}
+else if (Menu === "Rotis") {
+  Dish.innerHTML += "<option value='plain naan'>Plain Naan</option>";
+Dish.innerHTML += "<option value='butter naan'>Butter Naan</option>";
+Dish.innerHTML += "<option value='chapathi'>Chapathi</option>";
+}
+else if (Menu === "Curries") {
+  Dish.innerHTML += "<option value='paneer butter masala'>Paneer Butter Masala</option>";
+  Dish.innerHTML += "<option value='mushroom masala'>Mushroom Masala</option>";
+  Dish.innerHTML += "<option value='aloo masala'>Aloo Masala</option>";}
+  else if (Menu === "Juices&milkshakes") {
+  Dish.innerHTML += "<option value='pineapple juice'>Pineapple Juice</option>";
+  Dish.innerHTML += "<option value='orange juice'>Orange Juice</option>";
+  Dish.innerHTML += "<option value='watermelon juice'>Watermelon Juice</option>";
+  Dish.innerHTML += "<option value='apple juice'>Apple Juice</option>";}}
+</script>
+
+
+<p><a href="fourth page.html"><div style="height:40px; width:90px; background-color:yellow">ratings and reviews</a>
+
+</center>
+</br>
+<center>
+  <img src="https://qph.cf2.quoracdn.net/main-qimg-4af5d18582e7fb25daa3e71d62b587b7-lq">
+</center>
+  </body>
+</html>
